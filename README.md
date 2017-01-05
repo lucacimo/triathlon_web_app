@@ -8,7 +8,7 @@ This is the backend prototype for a triathlon sport application.
 
 ## Code Example
 
-REST API to create, update and manage workouts and retrieve workout statistics. For code samples and how to use the API look and the code samples in the test script
+REST API to create, update and manage workouts and retrieve workout statistics. For the API usage and sample codes check the test script
 
 ## Installation
 
