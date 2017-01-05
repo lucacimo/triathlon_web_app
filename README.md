@@ -1,34 +1,58 @@
-# triathlon_web_app
+# Triathlon web application
+
 Triathlon web app prototype
 
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overveiw that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This is the backend prototype for a triathlon sport application.
 
 ## Code Example
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-## Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+REST API to create, update and manage workouts and retrieve workout statistics. For code samples and how to use the API look and the code samples in the test script
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
+Install the following packages:
+pip install cherrypy
+pip install numpy
 
 ## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+User profile creation:
+POST http://127.0.0.1:8080/profile?user=username
+
+Retrieve user profile:
+GET http://127.0.0.1:8080/profile?user=username
+
+Update user profile:
+PUT http://127.0.0.1:8080/profile?user=username
+
+Delete user profile:
+DELETE http://127.0.0.1:8080/profile?user=username
+
+Workout creation:
+Status "completed" or "planned"
+POST http://127.0.0.1:8080/workouts?status=completed&date=YY-MM-DD&user=username
+
+Retrieve workout:
+Status "completed" or "planned"
+GET http://127.0.0.1:8080/workouts?status=completed&date=YY-MM-DD&user=username
+
+Update workout:
+PUT http://127.0.0.1:8080/workouts?status=completed&date=YY-MM-DD&user=username
+
+Delete workout:
+DELETE http://127.0.0.1:8080/workouts?status=completed&date=YY-MM-DD&user=username
+
+Retrieve overall statistics:
+GET http://127.0.0.1:8080/statistics?user=username
+
+Retrieve statistics by sport:
+Sport "cycling" or "running" or "swimming"
+GET http://127.0.0.1:8080/statistics?sport=cycling&user=username
 
 ## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+Check code samples in the test script
 
 ## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+CherryPy is distributed under a BSD license.

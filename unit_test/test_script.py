@@ -103,7 +103,7 @@ def delete_workouts():
         i += 1
 
 
-def compute_over_all_statistics():
+def compute_overall_statistics():
     parameters = {'user': users[0]['name']}
     r = s.get('http://127.0.0.1:8080/statistics', params=parameters)
     print_request(r, "GET")
@@ -121,15 +121,12 @@ def compute_statistics_by_sport():
 
 if __name__ == '__main__':
     post_users()
-    get_users()
-    put_users()
-    get_users()
     #delete_users()
     post_workouts()
     get_workouts()
     put_workouts()
     get_workouts()
     delete_workouts()
-    post_workouts()
-    compute_over_all_statistics()
+    # post_workouts()
+    compute_overall_statistics()
     compute_statistics_by_sport()
