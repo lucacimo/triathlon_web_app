@@ -126,7 +126,7 @@ if __name__ == '__main__':
     get_workouts()
     put_workouts()
     get_workouts()
-    delete_workouts()
+    #delete_workouts()
     # post_workouts()
     compute_overall_statistics()
     compute_statistics_by_sport()

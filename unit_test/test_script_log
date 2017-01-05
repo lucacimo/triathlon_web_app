@@ -1,0 +1,603 @@
+POST http://127.0.0.1:8080/profile?user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Content-Length : 127
+Content-Type : application/json
+{
+    "age": 33,
+    "body": {
+        "height": 170,
+        "weight": 65
+    },
+    "fitnessparam": {
+        "ftp": 123,
+        "lhtr": 150
+    },
+    "gender": "male",
+    "name": "luca"
+}
+
+Status : 201
+Date : Thu, 05 Jan 2017 13:42:14 GMT
+Content-Length : 0
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:14 GMT; Path=/
+
+POST http://127.0.0.1:8080/profile?user=marco
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 128
+Content-Type : application/json
+{
+    "age": 25,
+    "body": {
+        "height": 180,
+        "weight": 68
+    },
+    "fitnessparam": {
+        "ftp": 150,
+        "lhtr": 155
+    },
+    "gender": "male",
+    "name": "marco"
+}
+
+Status : 201
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 0
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+
+POST http://127.0.0.1:8080/workouts?status=completed&date=2017-02-01&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 455
+Content-Type : application/json
+{
+    "averageheartrate": 140,
+    "averagepower": 200,
+    "calories": 1500,
+    "description": "Normal endurance ride",
+    "distance": 60,
+    "duration": "2:00:15",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "powerzones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:10:15",
+        "zone_5": "0:00:00"
+    },
+    "type": "cycling"
+}
+
+Status : 201
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 0
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+
+POST http://127.0.0.1:8080/workouts?status=completed&date=2017-02-02&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 308
+Content-Type : application/json
+{
+    "averageheartrate": 150,
+    "calories": 500,
+    "description": "Interval training",
+    "distance": 10,
+    "duration": "0:45:30",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "type": "running"
+}
+
+Status : 201
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 0
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+
+POST http://127.0.0.1:8080/workouts?status=completed&date=2017-02-03&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 308
+Content-Type : application/json
+{
+    "averageheartrate": 145,
+    "calories": 450,
+    "description": "Technique session",
+    "distance": 2,
+    "duration": "0:40:15",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "type": "swimming"
+}
+
+Status : 201
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 0
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+
+GET http://127.0.0.1:8080/workouts?status=completed&date=2017-02-01&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 455
+Content-Type : application/json
+""
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 455
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+{
+    "averageheartrate": 140,
+    "averagepower": 200,
+    "calories": 1500,
+    "description": "Normal endurance ride",
+    "distance": 60,
+    "duration": "2:00:15",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "powerzones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:10:15",
+        "zone_5": "0:00:00"
+    },
+    "type": "cycling"
+}
+
+GET http://127.0.0.1:8080/workouts?status=completed&date=2017-02-02&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 308
+Content-Type : application/json
+""
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 308
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+{
+    "averageheartrate": 150,
+    "calories": 500,
+    "description": "Interval training",
+    "distance": 10,
+    "duration": "0:45:30",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "type": "running"
+}
+
+GET http://127.0.0.1:8080/workouts?status=completed&date=2017-02-03&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 308
+Content-Type : application/json
+""
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 308
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+{
+    "averageheartrate": 145,
+    "calories": 450,
+    "description": "Technique session",
+    "distance": 2,
+    "duration": "0:40:15",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "type": "swimming"
+}
+
+PUT http://127.0.0.1:8080/workouts?status=completed&date=2017-02-01&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 455
+Content-Type : application/json
+{
+    "averageheartrate": 140,
+    "averagepower": 200,
+    "calories": 1500,
+    "description": "Normal endurance ride",
+    "distance": 80,
+    "duration": "2:00:15",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "powerzones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:10:15",
+        "zone_5": "0:00:00"
+    },
+    "type": "cycling"
+}
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 0
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+
+PUT http://127.0.0.1:8080/workouts?status=completed&date=2017-02-02&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 308
+Content-Type : application/json
+{
+    "averageheartrate": 150,
+    "calories": 500,
+    "description": "Interval training",
+    "distance": 12,
+    "duration": "0:45:30",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "type": "running"
+}
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 0
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+
+PUT http://127.0.0.1:8080/workouts?status=completed&date=2017-02-03&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 310
+Content-Type : application/json
+{
+    "averageheartrate": 145,
+    "calories": 450,
+    "description": "Technique session",
+    "distance": 1.5,
+    "duration": "0:40:15",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "type": "swimming"
+}
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 0
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+
+GET http://127.0.0.1:8080/workouts?status=completed&date=2017-02-01&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 455
+Content-Type : application/json
+""
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 455
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+{
+    "averageheartrate": 140,
+    "averagepower": 200,
+    "calories": 1500,
+    "description": "Normal endurance ride",
+    "distance": 80,
+    "duration": "2:00:15",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "powerzones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:10:15",
+        "zone_5": "0:00:00"
+    },
+    "type": "cycling"
+}
+
+GET http://127.0.0.1:8080/workouts?status=completed&date=2017-02-02&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 308
+Content-Type : application/json
+""
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 308
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+{
+    "averageheartrate": 150,
+    "calories": 500,
+    "description": "Interval training",
+    "distance": 12,
+    "duration": "0:45:30",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "type": "running"
+}
+
+GET http://127.0.0.1:8080/workouts?status=completed&date=2017-02-03&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+Content-Length : 310
+Content-Type : application/json
+""
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 310
+Content-Type : application/json
+Allow : DELETE, GET, HEAD, POST, PUT
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+{
+    "averageheartrate": 145,
+    "calories": 450,
+    "description": "Technique session",
+    "distance": 1.5,
+    "duration": "0:40:15",
+    "heartratezones": {
+        "zone_1": "0:10:00",
+        "zone_2": "0:10:00",
+        "zone_3": "0:10:00",
+        "zone_4": "0:15:15",
+        "zone_5a": "0:00:00",
+        "zones_5b": "0:00:00",
+        "zones_5c": "0:00:00"
+    },
+    "type": "swimming"
+}
+
+GET http://127.0.0.1:8080/statistics?user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+""
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 173
+Content-Type : application/json
+Allow : GET, HEAD
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+{
+    "averagecalories": 816.6666666666666,
+    "averagedistance": 31.166666666666668,
+    "averageheartrate": 145.0,
+    "averagepower": 200.0,
+    "totaltime": "3:26:00",
+    "workoutsnumber": 3
+}
+
+GET http://127.0.0.1:8080/statistics?sport=cycling&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+""
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 170
+Content-Type : application/json
+Allow : GET, HEAD
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+{
+    "averagecalories": 1500.0,
+    "averagedistance": 80.0,
+    "averageheartrate": 140.0,
+    "averagepace": "1:30",
+    "averagepower": 200.0,
+    "totaltime": "2:00:15",
+    "workoutsnumber": 1
+}
+
+GET http://127.0.0.1:8080/statistics?sport=running&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+""
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 167
+Content-Type : application/json
+Allow : GET, HEAD
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+{
+    "averagecalories": 500.0,
+    "averagedistance": 12.0,
+    "averageheartrate": 150.0,
+    "averagepace": "3:47",
+    "averagepower": NaN,
+    "totaltime": "0:45:30",
+    "workoutsnumber": 1
+}
+
+GET http://127.0.0.1:8080/statistics?sport=swimming&user=luca
+Connection : keep-alive
+Accept-Encoding : gzip, deflate
+Accept : */*
+User-Agent : python-requests/2.12.4
+Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2
+""
+
+Status : 200
+Date : Thu, 05 Jan 2017 13:42:15 GMT
+Content-Length : 166
+Content-Type : application/json
+Allow : GET, HEAD
+Server : CherryPy/8.2.0
+Set-Cookie : session_id=858f57ef309934cef5e914e5e4dacb4a57a1fca2; expires=Thu, 05 Jan 2017 14:42:15 GMT; Path=/
+{
+    "averagecalories": 450.0,
+    "averagedistance": 1.5,
+    "averageheartrate": 145.0,
+    "averagepace": "2:41",
+    "averagepower": NaN,
+    "totaltime": "0:40:15",
+    "workoutsnumber": 1
+}
