@@ -13,42 +13,57 @@ REST API to create, update and manage workouts and retrieve workout statistics. 
 ## Installation
 
 Install the following packages:
+
 pip install cherrypy
+
 pip install numpy
 
 ## API Reference
 
 User profile creation:
+
 POST http://127.0.0.1:8080/profile?user=username
 
 Retrieve user profile:
+
 GET http://127.0.0.1:8080/profile?user=username
 
 Update user profile:
+
 PUT http://127.0.0.1:8080/profile?user=username
 
 Delete user profile:
+
 DELETE http://127.0.0.1:8080/profile?user=username
 
 Workout creation:
+
 Status "completed" or "planned"
+
 POST http://127.0.0.1:8080/workouts?status=completed&date=YY-MM-DD&user=username
 
 Retrieve workout:
+
 Status "completed" or "planned"
+
 GET http://127.0.0.1:8080/workouts?status=completed&date=YY-MM-DD&user=username
 
 Update workout:
+
 PUT http://127.0.0.1:8080/workouts?status=completed&date=YY-MM-DD&user=username
 
 Delete workout:
+
 DELETE http://127.0.0.1:8080/workouts?status=completed&date=YY-MM-DD&user=username
 
 Retrieve overall statistics:
+
 GET http://127.0.0.1:8080/statistics?user=username
 
 Retrieve statistics by sport:
+
 Sport "cycling" or "running" or "swimming"
+
 GET http://127.0.0.1:8080/statistics?sport=cycling&user=username
 
 ## Tests
