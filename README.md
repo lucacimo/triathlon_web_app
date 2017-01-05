@@ -8,17 +8,17 @@ This is the backend prototype for a triathlon sport application.
 
 ## Code Example
 
-REST API to create, update and manage workouts and retrieve workout statistics. For the API usage and sample codes check the test script
+REST API to create, update and manage workouts and retrieve workout statistics. For the API usage and sample code check the test script
 
 ## Installation
 
 Install the following packages:
 
-Install python 2.7
+1. install python 2.7
 
-pip install cherrypy
+2. pip install cherrypy
 
-pip install numpy
+3. pip install numpy
 
 Run python triathlon_web_app.py, it will run on localhost:8080 by default
 
