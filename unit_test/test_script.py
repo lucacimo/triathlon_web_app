@@ -125,7 +125,7 @@ def test_post_with_digest_auth():
     :return:
     '''
     parameters = {'user': users[0]['name']}
-    r = s.post('http://127.0.0.1:8080/profile', auth=HTTPDigestAuth('luca', 'secretpasswor'), params=parameters, json=users[0])
+    r = s.post('http://127.0.0.1:8080/profile', auth=HTTPDigestAuth('luca', 'secretpassword'), params=parameters, json=users[0])
     print_request(r, "POST", users[0])
     print_response(r)
 
