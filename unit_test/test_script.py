@@ -1,5 +1,6 @@
 import json
 import requests
+from requests.auth import HTTPDigestAuth
 from test_data import users, workouts, dates
 
 # create the session
@@ -111,7 +112,6 @@ def compute_overall_statistics():
 
 
 def compute_statistics_by_sport():
-    parameters = {'user': users[0]['name']}
     for workout in workouts:
         parameters = {'user': users[0]['name'], 'sport': workout['type']}
         r = s.get('http://127.0.0.1:8080/statistics', params=parameters)
@@ -119,14 +119,26 @@ def compute_statistics_by_sport():
         print_response(r)
 
 
+def test_post_with_digest_auth():
+    '''
+    Start web app with digest auth set to TRUE
+    :return:
+    '''
+    parameters = {'user': users[0]['name']}
+    r = s.post('http://127.0.0.1:8080/profile', auth=HTTPDigestAuth('luca', 'secretpasswor'), params=parameters, json=users[0])
+    print_request(r, "POST", users[0])
+    print_response(r)
+
+
 if __name__ == '__main__':
-    post_users()
-    #delete_users()
-    post_workouts()
-    get_workouts()
-    put_workouts()
-    get_workouts()
-    #delete_workouts()
+    # post_users()
+    # delete_users()
     # post_workouts()
-    compute_overall_statistics()
-    compute_statistics_by_sport()
+    # get_workouts()
+    # put_workouts()
+    # get_workouts()
+    # delete_workouts()
+    # post_workouts()
+    # compute_overall_statistics()
+    # compute_statistics_by_sport()
+    test_post_with_digest_auth()
