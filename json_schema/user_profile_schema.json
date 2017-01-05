@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "User Profile",
+    "description": "Athlete user profile",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "gender": {
+            "type": "string"
+        },
+        "age": {
+            "type": "number"
+        },
+
+        "body": {
+          "type": "object",
+          "properties": {
+            "weight": {
+              "type": "number"
+            },
+            "height": {
+              "type": "number"
+            }
+          },
+          "required": ["weight", "height"]
+        },
+
+        "fitnessparam": {
+            "type": "object",
+            "properties": {
+              "ftp": {
+                "type": "number"
+                },
+              "lhtr": {
+                "type": "number"
+              }
+            },
+            "required": ["ftp", "lhtr"]
+        }
+    },
+
+    "required": ["name", "gender", "age"]
+}
