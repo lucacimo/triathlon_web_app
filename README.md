@@ -14,9 +14,13 @@ REST API to create, update and manage workouts and retrieve workout statistics. 
 
 Install the following packages:
 
+Install python 2.7
+
 pip install cherrypy
 
 pip install numpy
+
+Run python triathlon_web_app.py, it will run on localhost:8080 by default
 
 ## API Reference
 
