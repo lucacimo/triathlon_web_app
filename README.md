@@ -1,6 +1,6 @@
 # Triathlon web application
 
-Triathlon web app prototype
+Triathlon web app prototype.
 
 ## Synopsis
 
@@ -20,7 +20,7 @@ Install the following packages:
 
 3. pip install numpy
 
-Run python triathlon_web_app.py, it will run on localhost:8080 by default
+Run python triathlon_web_app.py, it will run on localhost:8080 by default.
 
 ## API Reference
 
@@ -71,11 +71,13 @@ Sport "cycling" or "running" or "swimming"
 GET http://127.0.0.1:8080/statistics?sport=cycling&user=username
 
 ## Tests
-Check code samples in the test script
+Check code samples in the test script.
 
 ## References
 [1] http://www.ibm.com/developerworks/library/ws-restful/index.html
+
 [2] http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
+
 [3] http://docs.cherrypy.org/en/latest/
 
 ## License
