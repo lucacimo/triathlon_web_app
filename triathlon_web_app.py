@@ -37,11 +37,11 @@ def validate_message(data, schema):
 
 def validate_params(status, date):
     if status not in ["planned", 'completed']:
-        raise cherrypy.HTTPError(404, "status parameter not valid")
+        raise cherrypy.HTTPError(400, "status parameter not valid")
     try:
         validate_date(date)
     except ValueError:
-        raise cherrypy.HTTPError(404, "wrong date format")
+        raise cherrypy.HTTPError(400, "wrong date format")
 
 
 def validate_date(date):
@@ -67,7 +67,7 @@ class WorkoutStatisticsWebService(object):
     def GET(self, user, sport = None):
 
         if sport not in ["cycling", "running", "swimming", None]:
-            raise cherrypy.HTTPError(404, "Invalid sport parameter")
+            raise cherrypy.HTTPError(400, "Invalid sport parameter")
 
         user_profile = look_up_user_profile(user)
         if not user_profile:

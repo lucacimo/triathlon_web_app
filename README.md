@@ -73,5 +73,8 @@ GET http://127.0.0.1:8080/statistics?sport=cycling&user=username
 ## Tests
 Check code samples in the test script
 
+## References
+[1] http://www.ibm.com/developerworks/library/ws-restful/index.html
+
 ## License
 CherryPy is distributed under a BSD license.
