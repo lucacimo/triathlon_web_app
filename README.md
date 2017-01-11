@@ -75,6 +75,8 @@ Check code samples in the test script
 
 ## References
 [1] http://www.ibm.com/developerworks/library/ws-restful/index.html
+[2] http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
+[3] http://docs.cherrypy.org/en/latest/
 
 ## License
 CherryPy is distributed under a BSD license.
