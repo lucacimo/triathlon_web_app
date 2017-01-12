@@ -51,15 +51,6 @@ def validate_date(date):
         raise ValueError("Incorrect data format, should be YYYY-MM-DD")
 
 
-def from_json_to_object(payload):
-    '''
-    Load json data into a python object
-    :param payload:
-    :return:
-    '''
-    return json.loads(json.dumps(payload))
-
-
 @cherrypy.expose
 class WorkoutStatisticsWebService(object):
 

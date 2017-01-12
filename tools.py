@@ -9,7 +9,7 @@ def from_json_to_object(payload):
     '''
     Load json data into a python object
     :param payload:
-    :return:
+    :return: python dictionary
     '''
     return json.loads(json.dumps(payload))
 
@@ -19,6 +19,7 @@ def calc_running_heart_zones(lhtr):
     Calculates heart rate zones for running
     :param self:
     :param lhtr: lactate heart rate threshold
+    ::return: dictioanary with heart zones for running
     '''
     zones = {}
     lhtr = int(lhtr)
@@ -38,6 +39,7 @@ def calc_cycling_heart_zones(lhtr):
     Calculates heart rate zones for cycling
     :param self:
     :param lhtr: lactate heart rate threshold
+    :return: dictionary with heart zones for cycling
     '''
     zones = {}
     lhtr = int(lhtr)
@@ -56,7 +58,7 @@ def calc_power_zones(ftp):
     '''
     Calculates power zones
     :param ftp: Functional Threshold power
-    :return:
+    :return: dictionary with power zones
     '''
     zones = {}
     ftp = int(ftp)
@@ -73,7 +75,7 @@ def calc_power_zones(ftp):
 def compute_workouts_statistics(workouts, sport = None):
     '''
     Compute workouts statistics
-    :param workouts:
+    :param workouts: workout dictionary
     :return: dict with workouts statistics
     '''
     # compute the number of workouts
