@@ -20,6 +20,8 @@ Install the following packages:
 
 3. pip install numpy
 
+4. pip install jsonschema
+
 Run python triathlon_web_app.py, it will run on localhost:8080 by default.
 
 ## API Reference

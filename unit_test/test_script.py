@@ -131,14 +131,14 @@ def test_post_with_digest_auth():
 
 
 if __name__ == '__main__':
-    # post_users()
+    post_users()
     # delete_users()
-    # post_workouts()
+    post_workouts()
     # get_workouts()
     # put_workouts()
     # get_workouts()
     # delete_workouts()
     # post_workouts()
-    # compute_overall_statistics()
-    # compute_statistics_by_sport()
-    test_post_with_digest_auth()
+    compute_overall_statistics()
+    compute_statistics_by_sport()
+    #test_post_with_digest_auth()
