@@ -80,5 +80,7 @@ Check code samples in the test script.
 
 [3] http://docs.cherrypy.org/en/latest/
 
+[4] http://home.trainingpeaks.com/blog/article/joe-friel-s-quick-guide-to-setting-zones
+
 ## License
 CherryPy is distributed under a BSD license.
