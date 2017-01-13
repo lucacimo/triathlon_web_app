@@ -15,7 +15,7 @@ REST API to create, update and manage workouts and retrieve workout statistics. 
 Install the following packages:
 
 1. install python 2.7
-2. pip install requirements.txt
+2. pip install -r requirements.txt
 
 Run python triathlon_web_app.py, it will run on localhost:8080 by default.
 
